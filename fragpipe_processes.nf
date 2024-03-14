@@ -21,6 +21,8 @@ process fragpipeSearch {
     path 'reprint.spc.tsv'
     path 'MSstats.csv'
     path 'log*.txt'
+    path 'manifest.fp-manifest'
+    path 'fragpipe.workflow'
 
     script:
     // Replace Database path in FragPipe workflow file with user selected one.
