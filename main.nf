@@ -26,5 +26,6 @@ workflow {
     search(file(params.workflow_fp),
 	   file(params.manifest_fp),
 	   raw_files,
-	   file(params.database_fp))
+	   file(params.database_fp),
+	   params.fragpipe_threads)
 }

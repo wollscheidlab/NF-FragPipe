@@ -12,12 +12,14 @@ workflow search{
     manifest_fp
     raw_files
     database_fp
-
+    fragpipe_threads
+	
     main:
 
     fragpipeSearch(workflow_fp,
 		   manifest_fp,
 		   raw_files,
-		   database_fp)
+		   database_fp,
+		   fragpipe_threads)
 }
 
