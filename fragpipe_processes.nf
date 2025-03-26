@@ -21,7 +21,7 @@ process fragpipeSearch {
     path 'reprint.int.tsv'
     path 'reprint.spc.tsv'
     path 'MSstats.csv'
-    path 'log*.txt'
+    path 'log*.txt', optional: true
     path 'manifest.fp-manifest'
     path 'fragpipe.workflow'
 
