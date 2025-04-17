@@ -11,19 +11,7 @@ process fragpipeSearch {
     val fragpipe_threads
 
     output:
-    path 'combined_ion.tsv'
-    path 'combined_modified_peptide.tsv'
-    path 'combined_peptide.tsv'
-    path 'combined_protein.tsv'
-    path 'combined.prot.xml'
-    path 'experiment_annotation.tsv'
-    path 'sdrf.tsv'
-    path 'reprint.int.tsv'
-    path 'reprint.spc.tsv'
-    path 'MSstats.csv'
-    path 'log*.txt', optional: true
-    path 'manifest.fp-manifest'
-    path 'fragpipe.workflow'
+    path '*'
 
     script:
     // Replace Database path in FragPipe workflow file with user selected one.
