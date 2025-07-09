@@ -12,6 +12,7 @@ process fragpipeSearch {
 
     output:
     path '*'
+    path 'manifest.fp-manifest'
 
     script:
     // Replace Database path in FragPipe workflow file with user selected one.
