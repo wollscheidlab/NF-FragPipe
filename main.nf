@@ -23,7 +23,10 @@ workflow {
 	.set { raw_files }
         
     // Run FragPipe analysis
-    search(file(params.workflow_fp),
+    search(params.tools_folder,
+	   params.diann,
+	   params.python,
+	   file(params.workflow_fp),
 	   file(params.manifest_fp),
 	   raw_files,
 	   file(params.database_fp),
