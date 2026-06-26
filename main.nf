@@ -14,7 +14,7 @@ workflow {
     log.info("++++++++++========================================")
 
     // Extract the list of files we need to search from FragPipe manifest file
-    Channel.fromPath(params.manifest_fp)
+    channel.fromPath(params.manifest_fp)
 	.splitCsv(sep: '\t')
 	.map { row -> file("${row[0]}") }
 	.set { file_list }
