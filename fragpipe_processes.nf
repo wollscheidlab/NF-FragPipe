@@ -1,6 +1,5 @@
 process fragpipeSearch {
     tag "$manifest_fp"
-    publishDir 'Results/FragPipe', mode: 'copy'
     cpus params.fragpipe_threads
 
     input:
