@@ -27,5 +27,8 @@ workflow search{
 		   raw_files,
 		   database_fp,
 		   fragpipe_threads)
+
+    emit:
+    psm = fragpipeSearch.out.psm
 }
 

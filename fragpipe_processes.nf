@@ -15,6 +15,7 @@ process fragpipeSearch {
     output:
     path '*'
     path 'manifest.fp-manifest'
+    path '**/psm.tsv', optional: true, emit: psm
 
     script:
     // Replace Database path in FragPipe workflow file with user selected one.
