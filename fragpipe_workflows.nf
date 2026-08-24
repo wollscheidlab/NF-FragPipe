@@ -29,6 +29,6 @@ workflow search{
 		   fragpipe_threads)
 
     emit:
-    fragpipeSearch.out.psm
+    psm = fragpipeSearch.out.psm
 }
 
