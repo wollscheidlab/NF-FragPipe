@@ -22,7 +22,6 @@ process fragpipeSearch {
     // Run FragPipe analysis in headless mode
     """
     sed -i 's|database.db-path=.*|database.db-path=${database_fp}|' ${workflow_fp}
-    fragpipe --headless --config-tools-folder ${tools_folder_fp} --config-diann ${diann_fp} --config-python ${python_fp} --threads $fragpipe_threads --workflow  ${workflow_fp} --manifest
-${manifest_fp} --workdir .
+    fragpipe --headless --config-tools-folder ${tools_folder_fp} --config-diann ${diann_fp} --config-python ${python_fp} --threads $fragpipe_threads --workflow  ${workflow_fp} --manifest ${manifest_fp} --workdir .
     """
 }
