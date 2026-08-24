@@ -16,19 +16,18 @@ workflow search{
     raw_files
     database_fp
     fragpipe_threads
-	
+
     main:
 
     fragpipeSearch(tools_folder_fp,
-		   diann_fp,
-		   python_fp,
-		   workflow_fp,
-		   manifest_fp,
-		   raw_files,
-		   database_fp,
-		   fragpipe_threads)
+           diann_fp,
+           python_fp,
+           workflow_fp,
+           manifest_fp,
+           raw_files,
+           database_fp,
+           fragpipe_threads)
 
     emit:
     psm = fragpipeSearch.out.psm
 }
-
